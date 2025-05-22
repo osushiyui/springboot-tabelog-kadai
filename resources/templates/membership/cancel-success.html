@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="~{fragment :: meta}"></div>
+    <div th:replace="~{fragment :: styles}"></div>
+    <title>解約完了</title>
+</head>
+<body>
+    <div class="kadai_002-wrapper">
+        <!-- ヘッダー -->
+        <div th:replace="~{fragment :: header}"></div>
+        
+        <main>
+            <div class="container pt-4 pb-5 kadai_002-container">
+                <h2 class="text-center mb-4">解約完了</h2>
+                <div class="alert alert-success">
+                    <p>解約が完了しました。引き続き無料会員としてサービスを利用できます。</p>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <a href="/" class="btn btn-primary">ホームへ戻る</a>
+                </div>
+            </div>
+        </main>
+        
+        <!-- フッター -->
+        <div th:replace="~{fragment :: footer}"></div>
+    </div>
+
+    <div th:replace="~{fragment :: scripts}"></div>
+</body>
+</html>
